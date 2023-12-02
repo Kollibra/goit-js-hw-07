@@ -39,7 +39,10 @@ const createEl = images.map(({url, alt}) =>
      
 galleryEl.style.display = 'flex';
 galleryEl.style.justifyContent = 'space-evenly';
+galleryEl.style.gap = 10;
 galleryEl.style.listStyle = 'none';
 
 
 galleryEl.insertAdjacentHTML('afterbegin', createEl);
+
+
