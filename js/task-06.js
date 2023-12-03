@@ -33,7 +33,7 @@ btnCreate.addEventListener('click', () => {
   const inputValue = parseInt(inputNum.value);
 
   if (!isNaN(inputValue) && inputValue >= 1 && inputValue <= 100) {
-    let boxesToAdd = createBoxes(inputValue);
+    const boxesToAdd = createBoxes(inputValue);
     boxes.append(...boxesToAdd);
   } else {
     alert('Please enter a valid number between 1 and 100.');
